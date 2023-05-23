@@ -69,8 +69,12 @@
     <Button
         android:id="@+id/button"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:textSize="25dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btnstyle"
+        android:textColor="@color/white"
         android:text="레시피 확인하기" />
 </LinearLayout>
