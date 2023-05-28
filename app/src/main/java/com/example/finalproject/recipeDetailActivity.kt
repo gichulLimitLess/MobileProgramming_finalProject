@@ -52,7 +52,7 @@ class recipeDetailActivity : AppCompatActivity() {
         //getSerizableExtra가 Deprecated 되어서, 이를 해결하기 위한 방법 (RecipeFragment로부터 intent로 데이터를 넘겨 받는 작업)
         @Suppress("DEPRECATION")
         val receivedRecipeData = if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
-            intent.getSerializableExtra("voc", recipeData::class.java)
+            intent.getSerializableExtra("recipeData", recipeData::class.java)
         else
             intent.getSerializableExtra("recipeData") as recipeData
 
